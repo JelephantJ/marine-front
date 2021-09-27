@@ -18,13 +18,13 @@ $(document).ready(function () {
 		$('.search').toggleClass('active');
 	});
 	 $('.marine__slider').slick({
-	 	 infinite: true,
 	 });
 	 $('.projects__slider').slick({
-		infinite: true,
-			slidesToScroll: 1,
 			arrows: false,
 	 });
+	$('.twitter__slider').slick({
+
+	});
 });
 
 let arrow = (document.querySelector(".butArrow"));
