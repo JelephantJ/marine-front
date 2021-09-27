@@ -1,0 +1,114 @@
+.navigation{
+	grid-row: 2;
+	background-color: #accdda;
+	display: grid;
+	grid-template-columns: 1fr minmax(1600px, auto) 1fr;
+	grid-template-rows: 18px;
+	align-content: center;
+	z-index: 2;
+}
+.navigation__body{
+	position: relative;
+	grid-column: 2;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 13.5% 463px 65.5%;
+	
+}
+.navigation__list {
+	display: grid;
+	grid-column: 2;
+	grid-row: 1;
+	grid-template-columns: 50px 45px 60px 50px 73px;
+	column-gap: 45px;
+}
+.navigation__item {
+	display: grid;
+	grid-auto-flow: column;
+}
+.navigation__link {
+	font-size: 11px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #23323a;
+}
+.arrow__nav-1,
+.arrow__nav-2,
+.arrow__nav-3,
+.arrow__nav-4,
+.arrow__nav-5{
+	background: url('../img/icons/arrow__nav.png') center no-repeat;
+	transition: all 0.3s ease 0s;
+}
+.arrow__nav-1.active,
+.arrow__nav-2.active,
+.arrow__nav-3.active,
+.arrow__nav-4.active,
+.arrow__nav-5.active{
+	background: url('../img/icons/arrow__nav_acrive.png') center no-repeat;
+}
+
+.nav__search{
+	width: 16px;height: 16px;
+	background: url('../img/icons/nav__serch.png') center no-repeat;
+	position: absolute;
+	top: 15%;
+	right: 231px;
+}
+.search {
+	z-index: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	right: 231px;
+	width: 56;height: 56px;
+	display: none;
+	grid-template: 1fr / 1fr;
+	transition:all 5s linear;
+}
+.search__body {
+	display: grid;
+	grid-template-columns: 1fr 60px;
+	grid-template-rows: 1fr;
+}
+.search__left {
+	grid-column: 1;
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+.search_left__body {}
+.search__text{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #73848e;
+	padding: 0px 19px;
+}
+.search__right {
+	grid-column: 2;
+	background-color: #23323a;
+	width: 100%;
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+.search__right__body {
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+.right__serch_img {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+.searchImg {
+	margin: -50%;
+}
+.search.active{
+	z-index: 2;
+	top: 200%;
+	width: 271px;height: 56px;
+	display: grid;
+}
