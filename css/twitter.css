@@ -1,0 +1,135 @@
+.twitter {
+	grid-row: 9;
+	grid-column: 1;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1600px) 1fr;
+	background-color: #008FD5;
+}
+.twitter__body {
+	grid-column: 2;
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+.twitter__slider {
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+.twitter__slider_item {
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 980px) 1fr;
+}
+.twitter__item_body {
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 0.05fr 1fr;
+	column-gap: 40px;
+}
+.twitter__item_left {
+	grid-column: 1;
+}
+.twitter__item_left_body {
+	display: grid;
+}
+.twitter_iteml_left_img {
+	padding: 41px;
+	background-color: #1F9CDA;
+}
+.twitter__item_right {
+	grid-column: 2;
+	display: grid;
+	justify-items: center;
+	align-content: center;
+}
+.twitter__item_right_body {
+	display: grid;
+	grid-template: 1fr / 1fr;}
+.twitter__item_right_text {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	font-style: normal;
+	color: #ffffff;
+}
+.cir {
+	font-style: italic;
+	color: #bbdbef;
+}
+.about5 {
+	font-size: 12px;
+	font-style: italic;
+	color: #bbdbef;	
+}
+
+/* Слайдер */
+.twitter__slider .slick-slider {}
+/* Слайдер запущен */
+.twitter__slider .slick-slider.slick-initialized {}
+/* Слайдер с точками */
+.twitter__slider .slick-slider.slick-dotted {}
+/* Ограничивающая оболочка */
+.twitter__slider .slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.twitter__slider .slick-track {
+	display: flex;
+}
+/* Слайд */
+.twitter__slider .slick-slide {
+}
+/* Слайд активный (показывается) */
+.twitter__slider .slick-slide.slick-active {
+}
+/* Слайд основной */
+.twitter__slider .slick-slide.slick-current {
+}
+/* Слайд по центру */
+.twitter__slider .slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.twitter__slider .slick-slide.slick-cloned {
+}
+/* Стрелка */
+.twitter__slider .slick-arrow {
+}
+/* Стрелка влево */
+.twitter__slider .slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.twitter__slider .slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.twitter__slider .slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.twitter__slider .slick-dots {
+}
+.twitter__slider .slick-dots li {
+}
+/* Активная точка */
+.twitter__slider .slick-dots li.slick-active {
+}
+/* Элемент точки */
+.twitter__slider .slick-dots li button {
+}
+
+.twitter__slider {
+	position: relative;
+}
+.twitter__slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	width: 7px;
+	height: 11px;
+}
+.twitter__slider .slick-arrow.slick-prev {
+	right: 1.5%;
+	background: url("../img/icons/twitterPrev.png")0 0/cover no-repeat;
+}
+.twitter__slider .slick-arrow.slick-next {
+	right: 0;
+	background: url("../img/icons/twitterNext.png")0 0/cover no-repeat;
+}

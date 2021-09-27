@@ -1,0 +1,63 @@
+.team {
+	grid-row: 6;
+	grid-column: 1;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1600px) 1fr;
+	grid-template-rows: 1fr;
+	background: url('../img/icons/1600x549_d.png') 0 0/cover no-repeat;
+}
+.team__body {
+	grid-column: 2;
+	grid-row: 1;
+	display: grid;
+	grid-template: 0.03fr 1fr / 1fr;
+	justify-items: center;
+	grid-row-gap: 50px;
+}
+.team__title {
+	grid-row: 1;
+	margin: 45px 0px 0px 0px;
+	font-family: 'Open Sans';font-size: 30px;line-height: 26px;font-weight: 300;color: #ffffff;
+}
+.team__main {
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 76px;
+}
+.team-main__element {
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	max-width: 181px;
+}
+.team-element__img {
+	margin: 0px 0px 25px 0px;
+}
+.team-element__title {
+	font-family: 'Open Sans';font-size: 18px;line-height: 16px;font-weight: 300;color: #f5f5f5;
+	margin: 0px 0px 8px 0px;
+}
+.team-element__subtitle {
+	font-size: 11px;font-weight: 800;color: #2691ac;font-family: 'Open Sans';line-height: 16px;
+	margin: 0px 0px 17px 0px;
+}
+.team-element__text {
+	font-family: 'Open Sans';font-size: 13px;line-height: 20px;font-weight: 400;color: #b9c3ca;
+	display: grid;
+	justify-items: center;
+}
+hr.team-element__underline{
+	border: none;
+	background-color: #646c75;
+	height: 1px; /* Толщина линии */
+	width: 70px;
+	margin: 23px 0px 23px 0px;
+}
+.team-element__iconCont {}
+.team-element__iconList {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 15px;
+}
+.team-element__iconElement {}

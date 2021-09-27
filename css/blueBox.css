@@ -4,9 +4,9 @@
 	display: grid;
 	grid-template-columns: 1fr minmax(auto, 1600px) 1fr;
 	grid-template-rows: 1fr;
+	background: url('../img/blueBox.png') 0 0/cover no-repeat;
 }
 .blueBox__body {
-	background: url('../img/blueBox.png') 0 0 no-repeat;
 	grid-column: 2;
 	grid-row: 1;
 	display: grid;

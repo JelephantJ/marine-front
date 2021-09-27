@@ -1,0 +1,85 @@
+.register {
+	grid-row: 8;
+	grid-column: 1;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1600px) 1fr;
+	grid-template-rows: 1fr;
+	background: url('../img/icons/1600x442.png') 0 0 / cover no-repeat;
+	justify-items: center;
+}
+.register__body {
+	grid-column: 2;
+	grid-row: 1;
+	display: grid;
+	grid-template-rows: 0.01fr 1fr;
+	grid-template-columns: 100%;
+	grid-row-gap: 46px;
+	min-width: 549px;
+}
+.register__title {
+	margin: 43px 0px 0px 0px;
+	font-family: 'Open Sans';font-size: 30px;line-height: 26px;font-weight: 300;color: #ffffff;
+	text-align: center;
+}
+.register__main {
+	display: grid;
+	max-width: 549px;
+	grid-auto-flow: row;
+}
+.register-main__name,
+.register-main__email,
+.register-main__massage{
+	
+}
+.register-main__name {
+	max-height: 56px;
+	position: relative;
+}
+.register-main__name input,
+.register-main__email input,
+.register-main__massage input{
+	width: 100%;
+	height: 100%;
+	padding: 0px 0px 0px 21px;
+	background-color: rgba(252,252,252,0.67);border: 1px solid rgba(255,255,255,0.68);
+	font-family: 'Open Sans';font-size: 14px;line-height: 20px;font-weight: 400;color: #19242a;
+}
+.human {
+	position: absolute;
+	top: 33.333%;
+	right: 4%;
+}
+.register-main__email {
+	max-height: 56px;
+	position: relative;
+}
+.mial_bl {
+	position: absolute;
+	top: 33.333%;
+	right: 4%;
+}
+.register-main__massage {
+	max-height: 96px;
+	margin: 0px 0px 30px 0px;
+}
+.register-main__buttCont {
+	display: grid;
+	justify-self: center;
+	grid-auto-flow: column;
+	column-gap: 10px;
+}
+.register-main__send {
+	width: 119px;height: 45px;background-color: rgba(255,255,255,0.14);border: 1px solid rgba(238,238,238,0.23);
+	font-family: 'Open Sans';font-size: 11px;line-height: 20px;font-weight: 400;text-transform: uppercase;color: #ffffff;
+}
+.register-main__clear {
+	width: 119px;height: 45px;background-color: rgba(255,255,255,0.14);border: 1px solid rgba(238,238,238,0.23);
+	font-family: 'Open Sans';font-size: 11px;line-height: 20px;font-weight: 400;text-transform: uppercase;color: #ffffff;
+	position: relative;
+	text-align-last: left;
+	padding: 0px 0px 0px 34px;
+}
+.register-main__clear img{
+	position: absolute;top: 33.333%;right: 27.5%;
+	width: 13px;height: 13px;
+}

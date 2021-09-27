@@ -19,12 +19,19 @@
 	background: #fff;
 	grid-row: 3;
 	grid-template-columns: 1fr;
-	grid-template-rows: minmax(auto, 810px) minmax(auto, 239px) minmax(auto, 470px) minmax(auto, 615px) minmax(auto, 430px) minmax(auto, 549px); /* !!! */
+	grid-template-rows: minmax(auto, 810px) minmax(auto, 239px) minmax(auto, 470px) minmax(auto, 615px) minmax(auto, 430px) minmax(auto, 549px) minmax(auto, 155px) minmax(auto, 442px) minmax(auto, 120px) minmax(auto, 494px); /* !!! */
 	justify-items: stretch;
 }
 .footer {
 	grid-row: 4;
 	background-color: #141d22;
+	font-family: 'Open Sans';font-size: 12px;line-height: 42px;font-weight: 400;color: #547e93;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1600px) 1fr;
+}
+.footer__text{
+	grid-column: 2;
+	padding: 0px 215px;
 }
 .montserrat{
 	font-family: 'Montserrat';
